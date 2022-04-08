@@ -10,7 +10,7 @@ const webamp = new Webamp({
             artist: "Harold Budd / Brian Eno",
             title: "A Stream With Bright Fish",
         },
-        url: "https://cdn.discordapp.com/attachments/763823389483073586/962130929629929572/harold-budd-a-stream-with-bright-fish.mp3"
+        url: "https://raw.githubusercontent.com/prycaustic/neocities-errormine/main/jukebox/audio/songs/harold-budd-a-stream-with-bright-fish.mp3"
     }]
 });
 

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+
+/* Reset CSS */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #2e3037;
+    --light: #ebe5ce;
+}
+
+html {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25em;
+    line-height: 1.3;
+
+    background-color: #ebe5ce;
+    background-color: var(--light);
+    color: #2e3037;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 2rem 0;
+}
+
+body > header, nav, main, footer {
+    width: 90%;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+blockquote, cite, q {
+    font-style: italic;
+    text-align: center;
+}
+
+q {
+    display: block;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline dotted;
+    display: inline-block;
+    color: var(--dark);
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: bold;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 1rem 0 0.5rem;
+    line-height: 1.3;
+}
+
+h4, h5 {
+    text-align: left;
+    margin: 0.5rem 0;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+/* Main header */
+body > header, nav, footer {
+    margin: 0 auto;
+}
+
+body > header {
+    text-align: center;
+}
+
+/* Navigation */
+nav ol {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+/* Main */
+main {
+    margin: 2rem auto;
+}
+
+/* Sections */
+section {
+    margin-bottom: 1rem;
+}
+
+header p {
+    text-align: center;
+}
+
+/* Blog */
+#blog header > p {
+    margin-left: 1rem;
+    text-align: left;
+}
+
+/* Images */
+.pixel {
+    image-rendering: pixelated;
+}
+
+/* Figures */
+figure {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+figure > a {
+    display: block;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+/* Widths for stuff like figures */
+.small,
+.small-medium {
+    width: 40%;
+}
+
+.medium {
+    width: 60%;
+}
+
+.medium-large,
+.large {
+    width: 100%;
+}
+
+/* Image list */
+.img-list {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0.5rem;
+}
+
+.img-list * {
+    width: 100%;
+}
+
+.img-list a {
+    display: inline-block;
+}
+
+.img-list img {
+    vertical-align: bottom;
+}
+
+/* Image list with description */
+.img-desc-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-desc-list li > a {
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0 1rem;
+}
+
+.img-desc-list p {
+    text-align: left;
+    margin: 0;
+}
+
+.img-desc-list img {
+    grid-row: span 2;
+    vertical-align: bottom;
+    width: 4rem;
+}
+
+.round-icon {
+    border-radius: 50%;
+}
+
+/* Buttons */
+.fake-button {
+    color: var(--light);
+    text-decoration: none;
+    background-color: var(--dark);
+    padding: .75em 1.25em;
+    display: inline-block;
+}
+
+a:hover {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    opacity: 0.8;
+}
+
+/* 404 Page */
+#not-found, #not-found body {
+    height: 100%;
+    margin: 0;
+}
+
+#not-found body {
+    display: flex;
+    align-items: center;
+}
+
+#not-found main {
+    width: 30%;
+    margin: auto;
+}
+
+#not-found main,
+#not-found p {
+    text-align: center;
+}
+
+/* Code */
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fauux {
+    color: #d2738a;
+}
+
+/* Dividers */
+.divider {
+    margin: 2rem auto;
+}
+
+/* 
+Turn BW images to specific theme 
+Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
+*/
+.colorize {
+    filter: invert(17%) sepia(8%) saturate(749%) hue-rotate(189deg) brightness(95%) contrast(94%);
+}
+
+/* Links page */
+#links ol {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+}
+
+#links li > p,
+#links li > h4 {
+    margin: 0;
+}
+
+#links li > h4 > span {
+    float: right;
+}
+
+@media (min-width: 1200px) {
+    body > header, nav, 
+    main, footer {
+        width: 40%;
+    }
+
+    /* Widths */
+    .small {
+        width: 20%;
+    }
+
+    .medium-large {
+        width: 80%;
+    }
+
+    /* Image list */
+    .img-list {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Image list with description */
+    .img-desc-list {
+        width: 80%;
+    }
+}

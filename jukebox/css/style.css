@@ -1,19 +1,12 @@
 /* Styles for the jukebox page */
-/*
-+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-+=+=+=+=+=+=+=+=+=+= A GreyWolf WebWorks Free Font =+=+=+=+=+=+=+=+=+=+
-+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-+=+=+=+=+=+=+=+=+=+=+= "Black Wolf"  © Rich Gast =+=+=+=+=+=+=+=+=+=+=+
-+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
-*/
-@font-face {
-    font-family: "Black Wolf";
-    src: url(/fonts/BlackWolf.ttf);
-}
-
 @font-face {
     font-family: "Astral Delight";
     src: url(/fonts/Astral_Delight.ttf);
+}
+
+@font-face {
+    font-family: "Pixel Square 10";
+    src: url(/fonts/pixel-square-10.ttf);
 }
 
 /* Reset CSS */
@@ -24,19 +17,25 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     box-sizing: border-box;
 }
 
+:root {
+    --accent: #e0a5a9;
+    --bg: #040305;
+}
+
 html {
-    font-size: 1.25em;
     line-height: 1.3;
 
-    background-image: url(/jukebox/img/windows_xp.jpg);
+    overflow: hidden;
+    background-color: var(--bg);
+    color: white;
+    font-family: "Pixel Square 10", sans-serif;
+    background-image: url(/jukebox/img/stars4.gif);
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    user-select: none;
+    height: 100vh;
 }
-
 
 /* Headers */
 header > p {
@@ -51,8 +50,7 @@ h1, h2, h3 {
 }
 
 h4, h5 {
-    text-align: left;
-    margin: 0.5rem 0;
+        margin: 0.5rem 0;
     line-height: 1.3;
 }
 
@@ -69,16 +67,17 @@ h4 {font-size: 1.563rem;}
 
 h5 {font-size: 1.25rem;}
 
+/* Links */
+a {
+    color: var(--accent);
+}
+
 /* Albums */
 #album-viewer {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    width: 60%;
-    height: 75vh;
+    height: 100%;
     overflow-y: scroll;
-
-    background-image: url(/jukebox/img/gmcbg.gif);
+    scrollbar-color: var(--accent) var(--bg);
+    background-color: #00000088;
 }
 
 #album-viewer h3 {
@@ -89,20 +88,88 @@ h5 {font-size: 1.25rem;}
     width: 100%;
 }
 
-#album-viewer ol {
+#albums {
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem;
+    align-items: baseline;
 }
 
-#album-viewer li {
+#albums li {
+    overflow-wrap: break-word;
+    text-align: center;
     width: 100%;
 }
 
-/* Winamp */
-#winamp-container {
-    position: absolute;
-    right: 10%;
-    bottom: 30%;
+#album-viewer li p {
+    opacity: 0.7;
+}
+
+.playing {
+    border: 2px dotted var(--accent);
+}
+
+.playing p {
+    color: var(--accent);
+}
+
+.album-cover {
+    transition: opacity 0.2s;
+}
+
+.album-cover:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#disclaimer p {
+    text-align: center;
+    margin: 4rem;
+}
+
+#webamp {
+    display: none;
+}
+
+@media (min-width: 968px) {
+    #album-viewer {
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        overflow-y: scroll;
+        scrollbar-color: var(--accent) var(--bg);
+        background-color: #00000088;
+    }
+}
+
+@media (min-width: 1366px) {
+    #album-viewer {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        overflow-y: scroll;
+        scrollbar-color: var(--accent) var(--bg);
+        background-color: #00000088;
+    }
+
+    #albums {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1rem;
+        padding: 1rem;
+        align-items: baseline;
+    }
+
+    /* Winamp */
+    #winamp-container {
+        position: fixed;
+        right: 10%;
+        bottom: 30%;
+    }
+
+    #webamp {
+        display: block;
+    }
 }

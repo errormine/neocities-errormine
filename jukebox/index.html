@@ -5,56 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/jukebox/css/style.css">
-    <title>Jukebox WIP</title>
+    <link rel="shortcut icon" href="/jukebox/img/favicon.gif" type="image/x-icon">
+    <title>jukebox | errormine</title>
+
+    <!-- meta tags-->
+    <meta property="theme-color" content="#e0a5a9">
+    <meta property="og:title" content="jukebox | errormine">
+    <meta property="og:description" content="Explore and listen to some of the songs from my favorite albums.">
+    <meta property="og:image" content="/jukebox/img/favicon.gif">
 </head>
 <body id="jukebox">
-    <section id="album-viewer">
-        <article>
-            <header>
-                <h2>CYBERDELIA</h2>
-                <p>Here you'll find some of my favorite albums.</p>
-            </header>
-            <section>
-                <h3>ELECTRONIC</h3>
-                <ol>
-                    <li>
-                        <img src="/jukebox/img/covers/harold-budd-the-pearl.jpg" alt="">
-                        <h5>The Pearl</h5>
-                        <p>Harold Budd and Brian Eno</p>
-                        <a href="https://www.discogs.com/release/58148-Harold-Budd-Brian-Eno-With-Daniel-Lanois-The-Pearl">View on Discogs</a>
-                    </li>
-                    <li>
-                        <img src="/jukebox/img/covers/aphex-twin-selected-ambient-works-85-92.jpg" alt="">
-                        <h5>Selected Ambient Works 85-92</h5>
-                        <p>Aphex Twin</p>
-                        <a href="">View on Discogs</a>
-                    </li>
-                </ol>
-            </section>
-            <section>
-                <h3>ACOUSTIC</h3>
-                <ol>
-                    <li>
-                        <img src="/jukebox/img/covers/kaki-king-everybody-loves-you.jpg" alt="">
-                        <h5>Everybody Loves You</h5>
-                        <p>Kaki King</p>
-                        <a href="https://www.discogs.com/master/197844-Kaki-King-Everybody-Loves-You">View on Discogs</a>
-                    </li>
-                </ol>
-            </section>
-            <section>
-                <h3>RAP</h3>
-                <ol>
-                    <li>
-                        <img src="/jukebox/img/covers/yung-lean-unknown-death-2002.jpg" alt="">
-                        <h5>Unknown Death 2002</h5>
-                        <p>Yung Lean</p>
-                        <a href="https://www.discogs.com/release/13068453-Yung-Lean-Unknown-Death-2002">View on Discogs</a>
-                    </li>
-                </ol>
-            </section>
-        </article>
-    </section>
+    <article id="album-viewer">
+        <header>
+            <h2>CYBERDELIA</h2>
+            <p>Click an album cover to start playing a preview.</p>
+        </header>
+        <ol id="albums">
+            <li>
+                <img src="/jukebox/img/covers/aphex-twin-selected-ambient-works-85-92.jpg" alt="" id="aphex-twin-xtal" class="album-cover">
+                <h5>Selected Ambient Works 85-92</h5>
+                <p>Aphex Twin</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/arthur-russell-world-of-echo.jpg" alt="" id="arthur-russell-answers-me" class="album-cover">
+                <h5>World of Echo</h5>
+                <p>Arthur Russell</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/daft-punk-homework.jpg" alt="" id="daft-punk-fresh" class="album-cover">
+                <h5>Homework</h5>
+                <p>Daft Punk</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/e.jpg" alt="" id="ecco2k-peroxide" class="album-cover">
+                <h5>e</h5>
+                <p>Ecco2k</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/grimes-visions.jpg" alt="" id="grimes-genesis" class="album-cover">
+                <h5>Visions</h5>
+                <p>Grimes</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/harold-budd-the-pearl.jpg" alt="" id="harold-budd-a-stream-with-bright-fish" class="album-cover">
+                <h5>The Pearl</h5>
+                <p>Harold Budd and Brian Eno</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/kaki-king-everybody-loves-you.jpg" alt="" id="kaki-king-night-after-sidewalk" class="album-cover">
+                <h5>Everybody Loves You</h5>
+                <p>Kaki King</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/kate-bush-hounds-of-love.jpg" alt="" id="kate-bush-running-up-that-hill" class="album-cover">
+                <h5>Hounds of Love</h5>
+                <p>Kate Bush</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/la-priest-inji.jpg" alt="" id="la-priest-oino" class="album-cover">
+                <h5>Inji</h5>
+                <p>LA Priest</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/massive-attack-mezzanine.jpg" alt="" id="massive-attack-teardrop" class="album-cover">
+                <h5>Mezzanine</h5>
+                <p>Massive Attack</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/neon-indian-night-school.jpg" alt="" id="neon-indian-slumlord" class="album-cover">
+                <h5>VEGA INTL. Night School</h5>
+                <p>Neon Indian</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/oneohtrix-point-never-r-plus-seven.jpg" alt="" id="oneohtrix-point-never-along" class="album-cover">
+                <h5>R Plus Seven</h5>
+                <p>Oneohtrix Point Never</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/susumu-yokota-sakura.jpg" alt="" id="susumu-yokota-tobiume" class="album-cover">
+                <h5>Sakura</h5>
+                <p>Susumu Yokota</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/toro-y-moi-boo-boo.jpg" alt="" id="toro-y-moi-you-and-i" class="album-cover">
+                <h5>Boo Boo</h5>
+                <p>Toro y Moi</p>
+            </li>
+            <li>
+                <img src="/jukebox/img/covers/why-alopecia.jpg" alt="" id="why-the-hollows" class="album-cover">
+                <h5>Alopecia</h5>
+                <p>WHY?</p>
+            </li>
+        </ol>
+        <section id="disclaimer">
+            <h2>DISCLAIMER</h2>
+            <p>I do not own any of the music that is on this page, and I will not provide any downloads of the music found here. If you would like to listen to more of any album then search for where you can stream or buy it!</p>
+            <p>This page is made possible by <a href="https://github.com/captbaritone/webamp">Webamp</a></p>
+            <p>Bored? Go <a href="/">home</a> or visit some other <a href="/links/">links</a></p>
+        </section>
+    </article>
     <section id="winamp-container"></section>
     <script src="/jukebox/js/webamp.bundle.min.js"></script>
     <script src="/jukebox/js/jukebox.js"></script>

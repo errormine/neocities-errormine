@@ -258,6 +258,12 @@ a:hover {
     text-align: center;
 }
 
+/* RAT */
+#rat {
+    max-width: 24rem;
+    margin: 1rem;
+}
+
 /* Code */
 code {
     font-family: 'Courier New', Courier, monospace;

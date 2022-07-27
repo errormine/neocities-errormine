@@ -302,6 +302,10 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
     float: right;
 }
 
+#resources li {
+    margin-top: 0.5rem;
+}
+
 @media (min-width: 1200px) {
     body > header, nav, 
     main, footer {

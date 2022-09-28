@@ -8,6 +8,7 @@
     <title>BUTTON WALL</title>
 </head>
 <body>
+    <div id="crt-filter"></div>
     <header>
         <h1>BUTTON WALL</h1>
         <nav>
@@ -20,15 +21,22 @@
                 </li>
             </ol>
         </nav>
-        <p>buttons, buttons... get your buttons here!</p>
     </header>
+    <aside>
+        <button onclick="toggleCRT()">TOGGLE CRT FILTER</button>
+    </aside>
     <main id="buttons">
         <section>
             <header>
                 <h2>AWESOME PEOPLE</h2>
-                <p>buttons from some cool people on Neocities.</p>
             </header>
+            <p>buttons from some cool people on Neocities.</p>
             <ol class="buttons">
+                <li>
+                    <a href="https://39friend.neocities.org">
+                        <img src="/buttons/img/39friend-button.png" alt="39friend">
+                    </a>
+                </li>
                 <li>
                     <a href="https://antikrist.neocities.org/">
                         <img src="/buttons/img/antikrist-button.gif" alt="Anti Krist">
@@ -160,6 +168,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="https://psychicnewborn.neocities.org/">
+                        <img src="/buttons/img/psychic-newborn-button.gif" alt="psychic newborn">
+                    </a>
+                </li>
+                <li>
                     <a href="https://sakana.neocities.org/">
                         <img src="/buttons/img/sakana-button.png" alt="Sakana">
                     </a>
@@ -234,20 +247,20 @@
         <section>
             <header>
                 <h2>MY BUTTON</h2>
-                <p>add this button to your website... NOW!</p>
             </header>
+            <p>add this button to your website... NOW!</p>
             <figure>
                 <a href="https://errormine.neocities.org/">
                     <img src="/buttons/img/errormine-button.gif" alt="errormine">
                 </a>
-                <figcaption>tell me if you add my button so I can add yours.</figcaption>
             </figure>
+            <p></p>
         </section>
         <section>
             <header>
                 <h3>BANNERS</h3>
-                <p>BIG BUTTONS! these are mostly pages created by my friends.</p>
             </header>
+            <p>BIG BUTTONS! these are mostly pages created by my friends.</p>
             <ol class="banners">
                 <li>
                     <a href="https://saucy.neocities.org/">
@@ -269,10 +282,17 @@
         <section>
             <header>
                 <h2>WARNING</h2>
-                <p>Unless stated otherwise, copyright for all graphics on this page are owned by their respective rightsholders.</p>
             </header>
+            <p>Unless stated otherwise, copyright for all graphics on this page are owned by their respective rightsholders.</p>
         </section>
     </main>
     <script data-goatcounter="https://errormine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>
+        function toggleCRT() {
+            document.querySelector("#crt-filter").classList.toggle("crt-filter");
+        }
+
+        toggleCRT()
+    </script>
 </body>
 </html>

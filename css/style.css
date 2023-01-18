@@ -306,6 +306,58 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
     margin-top: 0.5rem;
 }
 
+/* JUKEBOX PAGE */
+/* Albums */
+#albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.album {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.album header * {
+    text-align: left;
+}
+
+.album img {
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.album p {
+    margin: 0;
+}
+
+#webamp {
+    display: none;
+}
+
+#disclaimer p {
+    text-align: center;
+}
+
+.playing {
+    border: 2px dotted var(--dark);
+}
+
+.playing p {
+    color: var(--accent);
+}
+
+.album-cover {
+    transition: opacity 0.2s;
+}
+
+.album-cover:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
 @media (min-width: 1200px) {
     body > header, nav, 
     main, footer {
@@ -330,5 +382,16 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
     /* Image list with description */
     .img-desc-list {
         width: 80%;
+    }
+
+    /* Winamp */
+    #winamp-container {
+        position: fixed;
+        right: 10%;
+        bottom: 30%;
+    }
+
+    #webamp {
+        display: block;
     }
 }

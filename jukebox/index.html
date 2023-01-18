@@ -4,106 +4,259 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/jukebox/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/jukebox/img/favicon.gif" type="image/x-icon">
     <title>jukebox | errormine</title>
 
     <!-- meta tags-->
-    <meta property="theme-color" content="#e0a5a9">
+    <meta property="theme-color" content="#ebe5ce">
     <meta property="og:title" content="jukebox | errormine">
     <meta property="og:description" content="Explore and listen to some of the songs from my favorite albums.">
     <meta property="og:image" content="/jukebox/img/favicon.gif">
 </head>
 <body id="jukebox">
-    <article id="album-viewer">
+    <header>
+        <h1>errormine</h1>
+        <nav>
+            <ol>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/about/">about</a>
+                </li>
+                <li>
+                    <a href="/links/">links</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
         <header>
-            <h2>CYBERDELIA</h2>
+            <h2>JUKEBOX</h2>
             <p>Click an album cover to start playing a preview.</p>
         </header>
-        <ol id="albums">
-            <li>
-                <img src="/jukebox/img/covers/aphex-twin-selected-ambient-works-85-92.jpg" alt="" id="aphex-twin-xtal" class="album-cover">
-                <h5>Selected Ambient Works 85-92</h5>
-                <p>Aphex Twin</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/arthur-russell-world-of-echo.jpg" alt="" id="arthur-russell-answers-me" class="album-cover">
-                <h5>World of Echo</h5>
-                <p>Arthur Russell</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/daft-punk-homework.jpg" alt="" id="daft-punk-fresh" class="album-cover">
-                <h5>Homework</h5>
-                <p>Daft Punk</p>
-            </li>
-            <li>
+        <section id="albums">
+            <figure class="album">
+                <img src="/jukebox/img/covers/85-92.jpg" alt="" id="aphex-twin-xtal" class="album-cover">
+                <figcaption>
+                    <h4><i>Selected Ambient Works 85-92</i></h4>
+                    <p>Aphex Twin</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/world-of-echo.jpg" alt="" id="arthur-russell-answers-me" class="album-cover">
+                <figcaption>
+                    <h4><i>World of Echo</i></h4>
+                    <p>Arthur Russell</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/no-voo-do-urubu.jpg" alt="" id="arthur-verocai-no-voo-do-urubu" class="album-cover">
+                <figcaption>
+                    <h4><i>No voo do urubu</i></h4>
+                    <p>Arthur Verocai</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/vespertine.jpg" alt="" id="bjork-hidden-place" class="album-cover">
+                <figcaption>
+                    <h4><i>Vespertine</i></h4>
+                    <p>Björk</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/geogaddi.jpg" alt="" id="boards-of-canada-music-is-math" class="album-cover">
+                <figcaption>
+                    <h4><i>Geogaddi</i></h4>
+                    <p>Boards of Canada</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/music-for-airports.jpg" alt="" id="brian-eno-1_1" class="album-cover">
+                <figcaption>
+                    <h4><i>Ambient 1: Music for Airports</i></h4>
+                    <p>Brian Eno</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/foreverandevernomore.jpg" alt="" id="brian-eno-im-hardly-me" class="album-cover">
+                <figcaption>
+                    <h4><i>FOREVER&shy;ANDEVER&shy;NOMORE</i></h4>
+                    <p>Brian Eno</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/antidawn.jpg" alt="" id="burial-strange-neighborhood" class="album-cover">
+                <figcaption>
+                    <h4><i>Antidawn EP</i></h4>
+                    <p>Burial</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/sub-rosa.jpg" alt="" id="charles-hayward-la-giara-di-gesturi" class="album-cover">
+                <figcaption>
+                    <h4><i>Les Nouvelles Musiques De Chambre Volume 2</i></h4>
+                    <p>Charles Hayward</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/homework.jpg" alt="" id="daft-punk-indo-silver-club" class="album-cover">
+                <figcaption>
+                    <h4><i>Homework</i></h4>
+                    <p>Daft Punk</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
                 <img src="/jukebox/img/covers/e.jpg" alt="" id="ecco2k-peroxide" class="album-cover">
-                <h5>e</h5>
-                <p>Ecco2k</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/grimes-visions.jpg" alt="" id="grimes-genesis" class="album-cover">
-                <h5>Visions</h5>
-                <p>Grimes</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/harold-budd-the-pearl.jpg" alt="" id="harold-budd-a-stream-with-bright-fish" class="album-cover">
-                <h5>The Pearl</h5>
-                <p>Harold Budd and Brian Eno</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/kaki-king-everybody-loves-you.jpg" alt="" id="kaki-king-night-after-sidewalk" class="album-cover">
-                <h5>Everybody Loves You</h5>
-                <p>Kaki King</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/kate-bush-hounds-of-love.jpg" alt="" id="kate-bush-running-up-that-hill" class="album-cover">
-                <h5>Hounds of Love</h5>
-                <p>Kate Bush</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/la-priest-inji.jpg" alt="" id="la-priest-oino" class="album-cover">
-                <h5>Inji</h5>
-                <p>LA Priest</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/massive-attack-mezzanine.jpg" alt="" id="massive-attack-teardrop" class="album-cover">
-                <h5>Mezzanine</h5>
-                <p>Massive Attack</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/neon-indian-night-school.jpg" alt="" id="neon-indian-slumlord" class="album-cover">
-                <h5>VEGA INTL. Night School</h5>
-                <p>Neon Indian</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/oneohtrix-point-never-r-plus-seven.jpg" alt="" id="oneohtrix-point-never-along" class="album-cover">
-                <h5>R Plus Seven</h5>
-                <p>Oneohtrix Point Never</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/susumu-yokota-sakura.jpg" alt="" id="susumu-yokota-tobiume" class="album-cover">
-                <h5>Sakura</h5>
-                <p>Susumu Yokota</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/toro-y-moi-boo-boo.jpg" alt="" id="toro-y-moi-you-and-i" class="album-cover">
-                <h5>Boo Boo</h5>
-                <p>Toro y Moi</p>
-            </li>
-            <li>
-                <img src="/jukebox/img/covers/why-alopecia.jpg" alt="" id="why-the-hollows" class="album-cover">
-                <h5>Alopecia</h5>
-                <p>WHY?</p>
-            </li>
-        </ol>
+                <figcaption>
+                    <h4><i>&#8494;</i></h4>
+                    <p>Ecco2K</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/talk-to-the-sea.jpg" alt="" id="gigi-masin-the-word-love" class="album-cover">
+                <figcaption>
+                    <h4><i>Talk to the Sea</i></h4>
+                    <p>Gigi Masin</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/wind.jpg" alt="" id="gigi-masin-call-me" class="album-cover">
+                <figcaption>
+                    <h4><i>Wind</i></h4>
+                    <p>Gigi Masin</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/visions.jpg" alt="" id="grimes-genesis" class="album-cover">
+                <figcaption>
+                    <h4><i>Visions</i></h4>
+                    <p>Grimes</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/avalon-sutra.jpg" alt="" id="harold-budd-how-vacantly-you-stare-at-me" class="album-cover">
+                <figcaption>
+                    <h4><i>Avalon Sutra</i></h4>
+                    <p>Harold Budd</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/the-pearl.jpg" alt="" id="harold-budd-late-october" class="album-cover">
+                <figcaption>
+                    <h4><i>The Pearl</i></h4>
+                    <p>Harold Budd</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/everybody-loves-you.jpg" alt="" id="kaki-king-kewpie-station" class="album-cover">
+                <figcaption>
+                    <h4><i>Everybody Loves You</i></h4>
+                    <p>Kaki King</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/hounds-of-love.jpg" alt="" id="kate-bush-and-dream-of-sheep" class="album-cover">
+                <figcaption>
+                    <h4><i>Hounds of Love</i></h4>
+                    <p>Kate Bush</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/inner-song.jpg" alt="" id="kelly-lee-owens-corner-of-my-sky" class="album-cover">
+                <figcaption>
+                    <h4><i>Inner Song</i></h4>
+                    <p>Kelly Lee Owens</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/inji.jpg" alt="" id="la-priest-gene-washes-with-new-arm" class="album-cover">
+                <figcaption>
+                    <h4><i>Inji</i></h4>
+                    <p>LA Priest</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/mezzanine.jpg" alt="" id="massive-attack-teardrop" class="album-cover">
+                <figcaption>
+                    <h4><i>Mezzanine</i></h4>
+                    <p>Massive Attack</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/r-plus-seven.jpg" alt="" id="oneohtrix-point-never-boring-angel" class="album-cover">
+                <figcaption>
+                    <h4><i>R Plus Seven</i></h4>
+                    <p>Oneohtrix Point Never</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/garden-of-delete.jpg" alt="" id="oneohtrix-point-never-ezra" class="album-cover">
+                <figcaption>
+                    <h4><i>Garden of Delete</i></h4>
+                    <p>Oneohtrix Point Never</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/journey-to-the-one.jpg" alt="" id="pharoah-sanders-kazuko" class="album-cover">
+                <figcaption>
+                    <h4><i>Journey to the One</i></h4>
+                    <p>Pharoah Sanders</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/agaetis-byrjun.png" alt="" id="sigur-rós-svefn-g-englar" class="album-cover">
+                <figcaption>
+                    <h4><i>Ágætis byrjun</i></h4>
+                    <p>Sigur Rós</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/music-for-18-musicians.jpg" alt="" id="steve-reich-section-vii" class="album-cover">
+                <figcaption>
+                    <h4><i>Music for 18 Musicians</i></h4>
+                    <p>Steve Reich</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/sakura.jpg" alt="" id="susumu-yokota-azukiiro-no-kaori" class="album-cover">
+                <figcaption>
+                    <h4><i>Sakura</i></h4>
+                    <p>Susumu Yokota</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/trax-on-da-rocks.jpg" alt="" id="thomas-bangalter-roule-boule" class="album-cover">
+                <figcaption>
+                    <h4><i>Trax on da Rocks</i></h4>
+                    <p>Thomas Bangalter</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/shadows-of-the-sun.jpg" alt="" id="ulver-eos" class="album-cover">
+                <figcaption>
+                    <h4><i>Shadows of the Sun</i></h4>
+                    <p>Ulver</p>
+                </figcaption>
+            </figure>
+            <figure class="album">
+                <img src="/jukebox/img/covers/come-in.jpg" alt="" id="weatherday-my-sputnik-sweetheart" class="album-cover">
+                <figcaption>
+                    <h4><i>Come In</i></h4>
+                    <p>Weatherday</p>
+                </figcaption>
+            </figure>
+        </section>
         <section id="disclaimer">
             <h2>DISCLAIMER</h2>
             <p>I do not own any of the music that is on this page, and I will not provide any downloads of the music found here. If you would like to listen to more of any album then search for where you can stream or buy it!</p>
             <p>This page is made possible by <a href="https://github.com/captbaritone/webamp">Webamp</a></p>
-            <p>Bored? Go <a href="/">home</a> or visit some other <a href="/links/">links</a></p>
         </section>
-    </article>
+        <figure class="divider medium-large" aria-hidden="true">
+            <img class="pixel colorize" src="/img/divider_globe.png" alt="">
+        </figure>
+    </main>
     <section id="winamp-container"></section>
     <script src="/jukebox/js/webamp.bundle.min.js"></script>
     <script src="/jukebox/js/jukebox.js"></script>

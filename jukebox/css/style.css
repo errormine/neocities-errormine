@@ -97,7 +97,7 @@ a {
     align-items: baseline;
 }
 
-#albums li {
+#album {
     overflow-wrap: break-word;
     text-align: center;
     width: 100%;

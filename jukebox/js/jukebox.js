@@ -6,7 +6,7 @@ if(!Webamp.browserIsSupported()) {
 
 const webamp = new Webamp({
     initialTracks: [{
-        url: "https://raw.githubusercontent.com/prycaustic/neocities-errormine/main/jukebox/audio/songs/harold-budd-a-stream-with-bright-fish.mp3"
+        url: "/jukebox/audio/harold-budd-a-stream-with-bright-fish.mp3"
     }]
 });
 
@@ -20,11 +20,11 @@ for (var i = 0; i < albumCovers.length; i++) {
 
 function handleAlbumClick(event) {
     var parent = event.target.parentElement;
-    var listItems = document.querySelectorAll("li");
+    var albums = document.querySelectorAll(".album");
 
-    for (var i = 0; i < listItems.length; i++) {
-        if (listItems[i].classList.length > 0 && listItems[i] != parent) {
-            listItems[i].classList.remove("playing");
+    for (var i = 0; i < albums.length; i++) {
+        if (albums[i].classList.length > 0 && albums[i] != parent) {
+            albums[i].classList.remove("playing");
         }
     }
 
@@ -32,6 +32,8 @@ function handleAlbumClick(event) {
         webamp.pause();
     } else {
         parent.classList.add("playing");
-        webamp.setTracksToPlay([{url: "https://raw.githubusercontent.com/prycaustic/neocities-errormine/main/jukebox/audio/songs/" + event.target.id + ".mp3"}]);
+        webamp.setTracksToPlay([{url: "/jukebox/audio/" + event.target.id + ".mp3"}]);
     }
 }
+
+//ffmpeg -i input.flac -ab 192k -map_metadata 0 -id3v2_version 3 output.mp3

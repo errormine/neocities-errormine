@@ -304,6 +304,7 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
 
 #resources li {
     margin-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 /* JUKEBOX PAGE */
@@ -356,6 +357,11 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
 .album-cover:hover {
     opacity: 0.75;
     cursor: pointer;
+}
+
+/* PHOTOS */
+audio {
+    width: 100%;
 }
 
 @media (min-width: 1200px) {

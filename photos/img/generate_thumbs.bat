@@ -1,0 +1,1 @@
+magick mogrify -path thumbs -resize 40%% -type truecolor -density 72 -quality 80 -format webp *.jpg

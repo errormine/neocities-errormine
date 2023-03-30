@@ -1,0 +1,10 @@
+@import url('/shrines/style.css');
+
+:root {
+  --link-color: #f30001;
+}
+
+html {
+  background: url(/shrines/mirrors-edge/img/me-background.png) no-repeat center center fixed;
+  background-size: cover;
+}

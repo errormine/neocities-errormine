@@ -19,6 +19,7 @@ html {
   line-height: 1.3;
 
   background-color: black;
+  background-attachment:fixed;
   color: var(--text-color);
   overflow-x: hidden;
 }
@@ -137,6 +138,11 @@ nav ol {
 
 .pixelated * {
   image-rendering: pixelated;
+}
+
+iframe {
+  display: block;
+  width: 100%;
 }
 
 @media (min-width: 1200px) {

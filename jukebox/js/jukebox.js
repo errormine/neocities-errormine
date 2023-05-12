@@ -4,21 +4,18 @@ if(!Webamp.browserIsSupported()) {
     throw new Error("What's the point of anything?")
 }
 
-const webamp = new Webamp({
-    initialTracks: [{
-        url: "/jukebox/audio/harold-budd-a-stream-with-bright-fish.mp3"
-    }]
-});
+const webamp = new Webamp();
 
 // Render after the skin has loaded.
-webamp.renderWhenReady(document.querySelector("#winamp-container"));
+webamp.renderWhenReady(document.getElementById("winamp-container"));
 
 const albumCovers = document.querySelectorAll(".album-cover");
 for (var i = 0; i < albumCovers.length; i++) {
-    albumCovers[i].addEventListener("click", handleAlbumClick)
+    albumCovers[i].addEventListener("click", handleAlbumClick);
 }
 
 function handleAlbumClick(event) {
+    document.getElementById("webamp").style.position = "fixed"; // fudge to get the fixed position to work...
     var parent = event.target.parentElement;
     var albums = document.querySelectorAll(".album");
 

@@ -312,11 +312,11 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
 /* Albums */
 #albums {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 }
 
 .album {
-    width: 12rem;
+    max-width: 12rem;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
@@ -365,7 +365,7 @@ audio {
     width: 100%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
     body > header, nav, 
     main, footer {
         width: 40%;

@@ -320,10 +320,7 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-}
-
-.album header * {
-    text-align: left;
+    text-align: center;
 }
 
 .album img {

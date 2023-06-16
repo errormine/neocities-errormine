@@ -1,0 +1,143 @@
+[
+    {
+        "filename": "agamemnon.epub",
+        "author": "Aeschylus",
+        "is_epub": true
+    },
+    {
+        "filename": "the-fables-of-aesop.epub",
+        "author": "Aesop",
+        "is_epub": false,
+        "link": "https://read.gov/aesop/001.html"
+    },
+    {
+        "filename": "lysistrata.epub",
+        "author": "Aristophanes",
+        "is_epub": true
+    },
+    {
+        "filename": "emma.epub",
+        "author": "Jane Austen",
+        "is_epub": true
+    },
+    {
+        "filename": "jane-eyre.epub",
+        "author": "Charlotte Bront\u00eb",
+        "is_epub": true
+    },
+    {
+        "filename": "alice-in-wonderland.epub",
+        "author": "Lewis Carroll",
+        "is_epub": true
+    },
+    {
+        "filename": "crime-and-punishment.epub",
+        "author": "Fyodor Dostoevsky",
+        "is_epub": true
+    },
+    {
+        "filename": "the-bacchae.epub",
+        "author": "Euripides",
+        "is_epub": true
+    },
+    {
+        "filename": "the-great-gatsby.epub",
+        "author": "F. Scott Fitzgerald",
+        "is_epub": true
+    },
+    {
+        "filename": "a-room-with-a-view.epub",
+        "author": "E. M. Forster",
+        "is_epub": true
+    },
+    {
+        "filename": "the-yellow-wallpaper.epub",
+        "author": "Charlotte Perkins Gilman",
+        "is_epub": true
+    },
+    {
+        "filename": "dubliners.epub",
+        "author": "James Joyce",
+        "is_epub": true
+    },
+    {
+        "filename": "ulysses.epub",
+        "author": "James Joyce",
+        "is_epub": true
+    },
+    {
+        "filename": "metamorphosis.epub",
+        "author": "Franz Kafka",
+        "is_epub": true
+    },
+    {
+        "filename": "the-trial.epub",
+        "author": "Franz Kafka",
+        "is_epub": true
+    },
+    {
+        "filename": "moby-dick.epub",
+        "author": "Herman Melville",
+        "is_epub": true
+    },
+    {
+        "filename": "winnie-the-pooh.epub",
+        "author": "A. A. Milne",
+        "is_epub": true
+    },
+    {
+        "filename": "frankenstein.epub",
+        "author": "Mary Shelley",
+        "is_epub": true
+    },
+    {
+        "filename": "oedipus-rex.epub",
+        "author": "Sophocles",
+        "is_epub": true
+    },
+    {
+        "filename": "dracula.epub",
+        "author": "Bram Stoker",
+        "is_epub": true
+    },
+    {
+        "filename": "a-modest-proposal.epub",
+        "author": "Jonathan Swift",
+        "is_epub": true
+    },
+    {
+        "filename": "anna-karenina.epub",
+        "author": "Leo Tolstoy",
+        "is_epub": true
+    },
+    {
+        "filename": "the-invisible-man.epub",
+        "author": "H. G. Wells",
+        "is_epub": true
+    },
+    {
+        "filename": "the-time-machine.epub",
+        "author": "H. G. Wells",
+        "is_epub": true
+    },
+    {
+        "filename": "the-war-of-the-worlds.epub",
+        "author": "H. G. Wells",
+        "is_epub": true
+    },
+    {
+        "filename": "the-age-of-innocence.epub",
+        "author": "Edith Wharton",
+        "is_epub": true
+    },
+    {
+        "filename": "the-importance-of-being-earnest.epub",
+        "author": "Oscar Wilde",
+        "is_epub": true
+    },
+    {
+        "filename": "the-waves.epub",
+        "author": "Virginia Woolf",
+        "is_epub": true
+    }
+]

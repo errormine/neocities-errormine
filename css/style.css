@@ -308,22 +308,35 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
     padding-left: 1rem;
 }
 
-/* JUKEBOX PAGE */
+/* JUKEBOX and LIBRARY */
 /* Albums */
-#albums {
+#albums,
+#bookshelf {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
 }
 
-.album {
-    max-width: 12rem;
+.album,
+.book {
+    max-width: 8rem;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
     text-align: center;
+    position: relative;
+    height: fit-content;
 }
 
-.album img {
+.album {
+    max-width: 12rem;
+}
+
+.book {
+    max-width: 8rem;
+}
+
+.album img,
+.book img {
     max-width: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -355,6 +368,39 @@ Filter generated with: https://codepen.io/sosuke/pen/Pjoqqp
 .album-cover:hover {
     opacity: 0.75;
     cursor: pointer;
+}
+
+/* LIBRARY */
+.book > figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+.book:hover .overlay {
+    opacity: 0.8;
+    color: var(--dark);
+    outline: 2px dotted var(--dark);
+}
+
+.template {
+    display: none;
 }
 
 /* PHOTOS */

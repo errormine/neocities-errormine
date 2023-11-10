@@ -408,9 +408,39 @@ audio {
     width: 100%;
 }
 
-iframe {
-    display: block;
-    margin: 0 auto;
+.responsive-iframe {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.widescreen {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.standard {
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+}
+
+.responsive-iframe > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fotd-links li {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#fotd-links li span {
+    font-weight: bold;
 }
 
 @media (min-width: 900px) {

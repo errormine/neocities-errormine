@@ -408,6 +408,11 @@ audio {
     width: 100%;
 }
 
+.masonry-grid {
+    column-count: auto;
+    column-width: 16rem;
+}
+
 .responsive-iframe {
     position: relative;
     overflow: hidden;
@@ -469,14 +474,8 @@ audio {
         width: 80%;
     }
 
-    /* Winamp */
-    #winamp-container {
-        position: fixed;
-        right: 10%;
-        bottom: 30%;
-    }
-
-    #webamp {
-        display: block;
+    /* Photos */
+    #photos {
+        width: 75%;
     }
 }

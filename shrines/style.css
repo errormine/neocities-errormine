@@ -145,10 +145,14 @@ iframe {
   width: 100%;
 }
 
-@media (min-width: 1200px) {
-  body > header, nav, 
-  main, footer {
-      width: 40%;
+@media (min-width: 900px) {
+  body {
+      width: 36rem;
+      margin: 0 auto;
+  }
+
+  nav {
+    width: 40%;
   }
 
   .fig-center > img {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{title} | errormine</title>
+
+    <!-- meta tags-->
+    <meta property="theme-color" content="#ebe5ce">
+    <meta property="og:title" content="{title} | errormine">
+    <meta property="og:description" content="{description}">
+    <meta property="og:image" content="/img/pixelportrait_stoat_big.png">
+</head>
+<body id="blog">
+    <header>
+        <h1>errormine</h1>
+        <nav>
+            <ol>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/about/">about</a>
+                </li>
+                <li>
+                    <a href="/links/">links</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <a href="/blog">&#8592; Back to Posts</a>
+        <header>
+            <h2>{title}</h2>
+            <p>{date}</p>
+        </header>
+        {md}
+        <a href="/blog">&#8592; Back to Posts</a>
+        <figure class="divider medium-large" aria-hidden="true">
+          <img class="pixel colorize" src="/img/divider_globe.png" alt="">
+      </figure>
+    </main>
+    <script data-goatcounter="https://errormine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

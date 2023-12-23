@@ -430,14 +430,14 @@ audio {
     height: 100%;
 }
 
-#fotd-links li {
+.links-list li {
     display: grid;
     grid-template-columns: 1fr 5fr;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-#fotd-links li span {
+.links-list li span {
     font-weight: bold;
 }
 

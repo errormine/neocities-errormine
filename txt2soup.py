@@ -57,6 +57,8 @@ def main() -> None:
                     html_file.write(html_content)
                 
                 posts.append((metadata, post_filename))
+    # sort posts by date
+    posts.sort(key=lambda x: x[0]['date'], reverse=True)
 
     create_index(src, dest, posts)
 
@@ -154,7 +156,7 @@ def convert_to_html(template_file: str, md: str, metadata: dict[str, str]) -> st
         return html
 
     date_obj = datetime.strptime(metadata["date"], "%Y-%m-%d")
-    new_date = date_obj.strftime("%B %d, %Y")
+    new_date = date_obj.strftime("%d %B %Y")
 
     full_html = template_content.replace("{title}", metadata["title"])
     full_html = full_html.replace("{description}", metadata["description"])

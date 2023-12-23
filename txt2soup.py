@@ -153,7 +153,7 @@ def convert_to_html(template_file: str, md: str, metadata: dict[str, str]) -> st
     if err:
         return html
 
-    date_obj = datetime.strptime(metadata["date"], "%Y-%M-%d")
+    date_obj = datetime.strptime(metadata["date"], "%Y-%m-%d")
     new_date = date_obj.strftime("%B %d, %Y")
 
     full_html = template_content.replace("{title}", metadata["title"])

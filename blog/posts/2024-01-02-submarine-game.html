@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Untitled Submarine Game (devlog 2) | errormine</title>
+
+    <!-- meta tags-->
+    <meta property="theme-color" content="#ebe5ce">
+    <meta property="og:title" content="Untitled Submarine Game (devlog 2) | errormine">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/img/pixelportrait_stoat_big.png">
+</head>
+<body id="blog">
+    <header>
+        <h1>errormine</h1>
+        <nav>
+            <ol>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/about/">about</a>
+                </li>
+                <li>
+                    <a href="/links/">links</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h2>BLOG</h2>
+        </header>
+        <a href="/blog">&#8592; Back to Posts</a>
+        <section>
+            <header>
+                <h3>Untitled Submarine Game (devlog 2)</h3>
+                <p>02 January 2024</p>
+            </header>
+            <p>A few more additions to the prototype since the first week! It's slowly starting to resemble something playable.</p>
+
+<h3>Week 2</h3>
+
+<p>Now that I had a chair I could sit in, I decided to create a simple model for the control panel and some nicer controls for the submarine. I added a lever to control the thrust, and added a bit more information the SONAR display.</p>
+
+<p><video width="100%" controls>
+    <source src="/blog/assets/video/a850uOhlfu.mp4" type="video/mp4">
+</video></p>
+
+<p>At this point, I decided to change the way you interacted with objects. I wanted to keep a crosshair that you could interact with, instead of switcing to a mouse pointer when you sit down. This made things a bit more difficult, but I eventually got it working.</p>
+
+<p>The most difficult part was probably the lever. I couldn't figure out how to make it move nicely until I stumbled across this <a href="https://www.reddit.com/r/Unity3D/comments/ogagbj/draggable_lever_with_mouse_cursor/">random reddit post</a> with the same issue.</p>
+
+<p>The final set up has this funny collision shape and moves based on where a raycast lands on that collider. It was surprisingly simpler than I originally made it out to be, but it works excellently.</p>
+
+<figure>
+    <img src="/blog/assets/img/lever.jpg" alt="">
+    <figcaption>The lever with a semi-circular collision shape.</figcaption>
+</figure>
+
+<p>This also meant that I could add an indicator on the crosshair about what interactable objects do. This took quite a while for me to get a system working well, but now it's general enough that I can add whatever I want.</p>
+
+<p>The crosshair icons are placeholder assets stolen from SOMA currently since I really like the way it works in that game.</p>
+
+<p><video width="100%" controls>
+    <source src="/blog/assets/video/zNdlhPpH6G.mp4" type="video/mp4">
+</video></p>
+
+<p>I also added a simple physics item which you can drag around. I would like to eventually let the player find some random items which they can place around the ship as decorations.</p>
+
+<p><video width="100%" controls>
+    <source src="/blog/assets/video/NnpsGiR1Yy.mp4" type="video/mp4">
+</video></p>
+
+<p>Here's a silly bug due to collisions between the physics item and the player.</p>
+
+<p><video width="100%" controls>
+    <source src="/blog/assets/video/KgIfFpsbrv.mp4" type="video/mp4">
+</video></p>
+
+<p>I found a <a href="https://godotshaders.com/shader/crt-shader-2/">CRT shader</a> which added a bit of visual interest to the SONAR display, and makes it look much nicer. I also added latitude and longitude coordinates to the display. I would like to use these in gameplay eventually.</p>
+
+<p>The coordinates are just based on the player's X and Z coordinates in meters but converted to latitude and longitude, and offset by a ((random)) amount.</p>
+
+<p><video width="100%" controls>
+    <source src="/blog/assets/video/ijCR6XAYvU.mp4" type="video/mp4">
+</video></p>
+
+<p>I also started working on a basic proximity sensor to let you discern how far away you are from nearby terrain as the display can be confusing at times. It will beep faster and faster until you are about 10 meters away and then become static.</p>
+
+<p><video width="100%" controls>
+    <source src="/blog/assets/video/4D33UT9n3g.mp4" type="video/mp4">
+</video></p>
+
+<p>That's all I did in week 2. Thanks for checking it out so far! Look out for more updates in the future.</p>
+
+        </section>
+        <a href="/blog">&#8592; Back to Posts</a>
+        <figure class="divider medium-large" aria-hidden="true">
+          <img class="pixel colorize" src="/img/divider_globe.png" alt="">
+      </figure>
+    </main>
+    <script data-goatcounter="https://errormine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

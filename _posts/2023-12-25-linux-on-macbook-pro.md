@@ -1,6 +1,6 @@
 ---
 title: The Apple Experience
-description: My experience trying to install and SSD into a MacBook Pro.
+description: My experience trying to install an SSD in a MacBook Pro.
 ---
 
 My cheap shit Asus laptop which I purchased a couple years ago is falling apart at the hinges, and any repair shops I talked to said it's beyond screwed. So for the past 4 months I've been living with the screen held together with electrical tape and my hopes and dreams. I decided to forget about trying to fix it and get myself a nicer used laptop which is hopefully better build quality and won't fall apart within a couple years.

@@ -439,14 +439,22 @@ audio {
 }
 
 .links-list li {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 .links-list li span {
     font-weight: bold;
+}
+
+.links-list li a {
+    display: inline-block;
+}
+
+#fotd .links-list {
+    max-height: 16rem;
+    overflow-y: scroll;
 }
 
 /* Buttons */

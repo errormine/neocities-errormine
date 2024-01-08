@@ -141,6 +141,10 @@ header p {
     image-rendering: pixelated;
 }
 
+img:not(.pixel) {
+    width: 100%;
+}
+
 /* Figures */
 figure {
     margin: 0 auto;

@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Function to set iframe source to a random Wikipedia URL not in local storage
 	function setRandomPage() {
 		var randomUrl = getRandomUrlNotInStorage();
-		document.getElementById('wikipedia-page').href = randomUrl;
+		document.getElementById('wikipedia-page').href = baseUrl + randomUrl;
 	}
 
 	// Add click event listener to the iframe

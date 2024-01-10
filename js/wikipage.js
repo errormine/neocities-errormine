@@ -66,21 +66,54 @@ let wikipediaUrls = [
 	"Intracolonic_explosion",
 	"Phantom_pain",
 	"Magellan_expedition",
+	"Depths_of_Wikipedia",
+	"Z-Library",
+	"Pierrot",
+	"Jan_Smit_(paleontologist)",
+	"Whitney_Chewston",
+	"Blobject",
+	"Queening",
+	"Straw_man",
+	"File:Samoyed-and-teddy-bear.jpg",
 ];
 
-function getRandomUrl() {
-	var randomIndex = Math.floor(Math.random() * wikipediaUrls.length);
-	return wikipediaUrls[randomIndex];
-}
-
-// Function to set iframe source to a random Wikipedia URL
-function setRandomPage() {
-	var randomUrl = getRandomUrl();
-	document.getElementById('wikipedia-page').href = baseUrl + randomUrl;
-}
-
 document.addEventListener('DOMContentLoaded', function () {
+	function getRandomUrlNotInStorage() {
+		var shuffledUrls = wikipediaUrls.slice();
+		var storedArticles = JSON.parse(localStorage.getItem('visitedArticles')) || [];
+
+		// Shuffle the array to get a random order
+		for (let i = shuffledUrls.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[shuffledUrls[i], shuffledUrls[j]] = [shuffledUrls[j], shuffledUrls[i]];
+		}
+
+		var randomUrl = shuffledUrls.find(url => !storedArticles.includes(url));
+
+		// If all URLs have been visited, reset the storage and try again
+		if (!randomUrl) {
+			storedArticles = [];
+			randomUrl = shuffledUrls[0];
+		}
+
+		// Add the current URL to the visited articles
+		storedArticles.push(randomUrl);
+		localStorage.setItem('visitedArticles', JSON.stringify(storedArticles));
+
+		return randomUrl;
+	}
+
+	// Function to set iframe source to a random Wikipedia URL not in local storage
+	function setRandomPage() {
+		var randomUrl = getRandomUrlNotInStorage();
+		document.getElementById('wikipedia-page').src = randomUrl;
+	}
+
+	// Add click event listener to the iframe
+	document.getElementById('wikipedia-page').addEventListener('click', function () {
+		setRandomPage();
+	});
+
+	// Set initial random page on page load
 	setRandomPage();
 });
-
-document.getElementById('wikipedia-page').addEventListener("click", setRandomPage);

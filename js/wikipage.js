@@ -82,3 +82,5 @@ function setRandomPage() {
 document.addEventListener('DOMContentLoaded', function () {
 	setRandomPage();
 });
+
+document.getElementById('wikipedia-page').addEventListener("click", setRandomPage);

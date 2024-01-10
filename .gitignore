@@ -2,5 +2,5 @@
 .vscode
 _drafts
 _posts
-/blog/assets/video/*
+blog/assets/video/
 *.py

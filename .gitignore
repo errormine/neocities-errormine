@@ -1,5 +1,6 @@
 .git
 .vscode
 _drafts
-/blog/assets/video
+_posts
+/blog/assets/video/*
 *.py

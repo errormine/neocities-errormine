@@ -34,9 +34,22 @@ body > header, nav, main, footer {
     width: 90%;
 }
 
+code {
+    font-size: 14px;
+    font-family: monospace;
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: 0.15rem;
+    padding: 0.15rem;
+}
+
 p, main ul, main ol {
     margin-bottom: 1rem;
     text-align: justify;
+}
+
+main ul, main ol {
+    text-align: left;
 }
 
 blockquote, cite, q {

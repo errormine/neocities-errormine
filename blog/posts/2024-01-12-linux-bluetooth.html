@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>How to connect a bluetooth mouse to your Linux machine | errormine</title>
+
+    <!-- meta tags-->
+    <meta property="theme-color" content="#ebe5ce">
+    <meta property="og:title" content="How to connect a bluetooth mouse to your Linux machine | errormine">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="/img/pixelportrait_stoat_big.png">
+</head>
+<body id="blog">
+    <header>
+        <h1>errormine</h1>
+        <nav>
+            <ol>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                <li>
+                    <a href="/about/">about</a>
+                </li>
+                <li>
+                    <a href="/links/">links</a>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h2>BLOG</h2>
+        </header>
+        <a href="/blog">&#8592; Back to Posts</a>
+        <section>
+            <header>
+                <h3>How to connect a bluetooth mouse to your Linux machine</h3>
+                <p>12 January 2024</p>
+            </header>
+            <p>In the ever-evolving world of technology, wireless peripherals have become a staple for users seeking convenience and flexibility. Bluetooth mice, in particular, offer a cable-free solution that enhances the overall computing experience. If you're a Linux user looking to connect a Bluetooth mouse to your machine, you're in the right place. This step-by-step guide will walk you through the process, making it a seamless and hassle-free endeavor.</p>
+
+<p>Step 1: Turn on Bluetooth:</p>
+
+<p>Make sure that Bluetooth is enabled on your Linux machine. You can usually find the Bluetooth settings in the system tray or settings menu. If Bluetooth is turned off, toggle it on.</p>
+
+<p>Step 2: Put Your Bluetooth Mouse in Discovery Mode:</p>
+
+<p>Refer to your mouse's user manual to understand how to put it into discovery or pairing mode. Typically, this involves holding down a button or a combination of buttons until an LED light starts flashing, indicating that the mouse is ready to pair.</p>
+
+<p>Step 3: Open Bluetooth Settings:</p>
+
+<p>Navigate to your Linux machine's Bluetooth settings. This can usually be found in the system settings or through the system tray. Open the Bluetooth settings menu.</p>
+
+<p>Step 4: Scan for Devices:</p>
+
+<p>In the Bluetooth settings menu, initiate a scan for nearby devices. Your Bluetooth mouse should appear in the list of available devices. Once it appears, select it to begin the pairing process.</p>
+
+<p>Step 5: Pair the Devices:</p>
+
+<p>Click on the Bluetooth mouse in the list of available devices and choose the option to pair or connect. Follow any on-screen prompts to complete the pairing process. Once successfully paired, your Bluetooth mouse should be ready for use.</p>
+
+<p>Connecting a Bluetooth mouse to your Linux machine is a straightforward process that adds a new level of convenience to your computing experience. By following these simple steps, you can enjoy the freedom of a wireless mouse while navigating your Linux environment. Embrace the world of wireless peripherals and enhance your productivity on Linux with the seamless integration of a Bluetooth mouse.</p>
+
+<p>(This article was written by an AI, fuck you)</p>
+
+<ul>
+<li>Step 5: Come back the next day and try to use the mouse again.</li>
+<li>Step 6: It has stopped working and won't connect anymore.</li>
+<li>Step 7: Huh?? It was working just fine...</li>
+<li>Step 8: Remove the mouse from the bluetooth settings menu.</li>
+<li>Step 9: Attempt to pair it again and fail.</li>
+<li>Step 10: Restart your Linux machine.</li>
+<li>Step 10b: Disable the bluetooth service and restart it.</li>
+<li>Step 10c: Check <code>rfkill list all</code></li>
+<li>Step 10d: Nothing is blocked.</li>
+<li>Step 11: Fail to pair the mouse again.</li>
+<li>Step 12: Start searching why it might be failing.</li>
+<li>Step 13: Try changing the network manager powersaving settings as per this <a href="https://forums.linuxmint.com/viewtopic.php?t=405803">forum post</a>.</li>
+<li>Step 14: It now connects for half a second and then disconnects.</li>
+<li>Step 15: Find this <a href="https://wiki.ubuntu.com/DebuggingBluetooth">page about debugging bluetooth</a>.</li>
+<li>Step 15: Enable verbose logging from the bluetooth service with </li>
+<li><code>sudo sed -i 's/bluetoothd/bluetoothd \-d/g' /lib/systemd/system/bluetooth.service</code></li>
+<li>Step 16: Realize you are stupid and don't know where to check the logs.</li>
+<li>Step 17: Read through <a href="https://djorborn.medium.com/bluetoothctl-failed-to-connect-org-bluez-error-failed-54040f12b4f8">this page</a>.</li>
+<li>Step 18: It's not actually useful for you.</li>
+<li>Step 19: Try downloading some random packages with a similar name anyway.</li>
+<li>Step 20: Delete them cause they didn't make a difference, and you knew they wouldn't.</li>
+<li>Step 21: Try using bluetoothctl like it shows cause it actually gives you error messages.</li>
+<li>Step 22: <code>bluetoothctl</code></li>
+<li>Step 23: <code>agent on</code></li>
+<li>Step 24: <code>default-agent</code></li>
+<li>Step 25: <code>power on</code></li>
+<li>Step 26: <code>scan on</code></li>
+<li>Step 27: <code>connect &lt;MAC ADDRESS&gt;</code></li>
+<li>Step 28: <code>Failed to connect: org.bluez.Error.Failed</code></li>
+<li>Step 29: <code>pair &lt;MAC ADDRESS&gt;</code></li>
+<li>Step 30: <code>Failed to pair: org.bluez.Error.AuthenticationCanceled</code></li>
+<li>Step 31: Scream and cry.</li>
+<li>Step 32: Start googling every error you get to no avail.</li>
+<li>Step 34: It starts doing this for some reason.</li>
+</ul>
+
+<p><img src="/blog/assets/img/ac4901920d.webp" alt="" /></p>
+
+<ul>
+<li>Step 35: <code>sudo apt remove blueman</code></li>
+<li>Step 36: Now you don't have two interfaces for connecting to bluetooth.</li>
+<li>Step 37: <code>sudo apt purge bluez bluez-tools</code></li>
+<li>Step 38: <code>sudo apt install bluez bluez-tools</code></li>
+<li>Step 39: Still won't connect.</li>
+<li>Step 40: Restart machine.</li>
+<li>Step 41: Give up.</li>
+<li>Step 42: Contemplate purchasing a USB bluetooth adapter.</li>
+<li>Step 43: Yell at your friends for telling you to purchase a new mouse.</li>
+<li>Step 44: Watch some YouTube.</li>
+<li>Step 45: Reinstall Linux Mint COMPLETELY LIKE A FOOL LIKE A MORON. IT STILL DOES NOT WORK.</li>
+<li>Step 46: Reinstall all of your stuff.</li>
+<li>Step 47: Try again 2 days later.</li>
+<li>Step 48: Find a GitHub issues thread which mentions one specific issue with your specific mouse was fixed in a newer kernel.</li>
+<li>Step 49: Update kernel from 5.15 -> 6.5.0 via update manager.</li>
+<li>Step 50: The mouse now connects without an issue.</li>
+</ul>
+
+<p>Scream.</p>
+
+        </section>
+        <a href="/blog">&#8592; Back to Posts</a>
+        <figure class="divider medium-large" aria-hidden="true">
+          <img class="pixel colorize" src="/img/divider_globe.png" alt="">
+      </figure>
+    </main>
+    <script data-goatcounter="https://errormine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

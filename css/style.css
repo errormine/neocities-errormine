@@ -34,7 +34,7 @@ body > header, nav, main, footer {
     width: 90%;
 }
 
-p {
+p, main ul, main ol {
     margin-bottom: 1rem;
     text-align: justify;
 }

@@ -173,7 +173,9 @@ figure img {
 }
 
 img {
+    display: block;
     max-width: 100%;
+    font-style: italic;
 }
 
 figcaption {

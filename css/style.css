@@ -143,6 +143,11 @@ header p {
     text-align: center;
 }
 
+.tagline {
+    text-align: left;
+    text-indent: 1rem;
+}
+
 /* Blog */
 #blog header > p {
     margin-left: 1rem;

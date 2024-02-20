@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>bookbug | errormine</title>
+    <title>{{ title }} | errormine</title>
 
     <!-- meta tags-->
     <meta property="theme-color" content="#ebe5ce">
-    <meta property="og:title" content="bookbug | errormine">
-    <meta property="og:description" content="Monthly bookclub">
+    <meta property="og:title" content="{{ title }} | errormine">
+    <meta property="og:description" content="A review of {{ title }}">
     <meta property="og:image" content="/img/pixelportrait_stoat_big.png">
 </head>
-<body id="bookbug">
+<body>
     <header>
         <h1>errormine</h1>
         <nav>
@@ -32,20 +32,11 @@
     </header>
     <main>
         <header>
-            <h2>BOOKBUG</h2>
-            <p><a href="https://bookbug.neocities.org/">Bookbug</a> is a digital book club that is centered around discussions and reviews. Each month members will read a book and publish their thoughts to their personal sites. This is my personal page for reviewing each month's book. Please visit the <a href="https://bookbug.neocities.org/#four">other members</a>.</p>
+            <h3>{{ title }}</h3>
+            <p class="tagline">by {{ author }}</p>
         </header>
-        <section>
-            <h2>Reviews</h2>
-            <ol><li>
-    <header>
-        <h3>Giovanni's Room</h3>
-        <p class="tagline">by James Baldwin</p>
-    </header>
-    <p>I read this last summer, but I am currently re-reading it. I will add my review here once I've finished it.</p>
-    <p><a href="/bookbug/review/2024-02-giovannis-room.html" class="review-link">Read review...</a></p>
-    </li></ol>
-        </section>
+        {{ contents }}
+        <p><a href="/bookbug/">&#8592; Back to bookbug home.</a></p>
         <figure class="divider medium-large" aria-hidden="true">
             <img class="pixel colorize" src="/img/divider_globe.png" alt="">
         </figure>

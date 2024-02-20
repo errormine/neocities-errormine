@@ -146,6 +146,7 @@ header p {
 .tagline {
     text-align: left;
     text-indent: 1rem;
+    margin-top: -0.5rem;
 }
 
 /* Blog */
@@ -312,7 +313,7 @@ code {
 }
 
 /* Links page */
-#links ol {
+#links ul {
     display: flex;
     flex-direction: column;
     grid-gap: 1rem;
@@ -555,6 +556,12 @@ audio {
 .buttons,
 .banners {
     user-select: none;
+}
+
+/* BOOKBUG */
+.review-link {
+    float: right;
+    margin-top: -1rem;
 }
 
 /* THEMES */

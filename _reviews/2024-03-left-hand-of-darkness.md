@@ -23,5 +23,7 @@ A lot of time is also spent philosophizing about war, religion, politics, and so
 Some people might find the way it's written to be dry, but if you are interested in any of the ideas presented in the book I would recommend you give it a try. I have barely covered them here or done them justice so I also recommend you do some more research about it before diving in. This book is fantastic and now a personal favorite of mine.
 
 Further reading: 
-- [*We should all be reading more Ursula Le Guin*](https://theoutline.com/post/7886/ursula-le-guin-carrier-bag-theory)
-- [*Ursula K. Le Guin, The Art of Fiction No. 221*](https://www.theparisreview.org/interviews/6253/the-art-of-fiction-no-221-ursula-k-le-guin)
+
+[*We should all be reading more Ursula Le Guin*](https://theoutline.com/post/7886/ursula-le-guin-carrier-bag-theory)
+
+[*Ursula K. Le Guin, The Art of Fiction No. 221*](https://www.theparisreview.org/interviews/6253/the-art-of-fiction-no-221-ursula-k-le-guin)

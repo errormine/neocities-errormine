@@ -436,9 +436,10 @@ audio {
 
 .masonry-grid {
     column-count: auto;
-    column-width: 16rem;
+    column-width: 14rem;
 }
 
+/* FOTD */
 .responsive-iframe {
     position: relative;
     overflow: hidden;
@@ -682,6 +683,6 @@ h1 {
 
     /* Photos */
     #photos {
-        width: 75%;
+        width: 95%;
     }
 }

@@ -1,9 +1,0 @@
-@import url('/shrines/style.css');
-
-:root {
-  --link-color: #f8f870;
-}
-
-html {
-  background: url(/shrines/metroid/img/gloomy-bg.png);
-}

@@ -1,1 +1,0 @@
-python3 txt2soup.py _posts blog

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WRITING — errormine</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <title>writing — errormine</title>
 </head>
 <body>
     <header>
@@ -11,23 +12,32 @@
         <a href="/">errormine</a>
     </h2>
     <nav>
-        <ol>
-            <li>
+        <!-- Top level pages (portals) -->
+        <ul><li >
                 <a href="/gallery/">gallery</a>
-            </li>
-            <li>
+                
+            </li><li  aria-current="page" >
                 <a href="/writing/">writing</a>
-            </li>
-            <li>
+                
+                    <!-- Second level pages (sections) -->
+                    <ul></ul>
+                
+            </li><li>
                 <a href="/about/">about</a>
             </li>
-        </ol>
+        </ul>
     </nav>
 </header>
     <main>
-        <section class="content">
-            <h1>WRITING</h1>
+        <section>
+            <h1>writing</h1>
             
+            <section class="portal-recent">
+                <h2>Recent updates:</h2>
+                <ol><li>
+                            <a href="/gallery/photography/lights/">lights</a>
+                        </li></ol>
+            </section>
         </section>
     </main>
     <footer>

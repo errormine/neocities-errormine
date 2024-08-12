@@ -1,0 +1,29 @@
+[
+    {
+        "name": "lights",
+        "description": "I LOOVE LIGHTS",
+        "thumbnail": "/assets/img/crow.jpg",
+        "photoList": [
+            {
+                "name": "crow",
+                "url": "/assets/img/crow.jpg"
+            },
+            {
+                "name": "kumiko",
+                "url": "/assets/img/kumiko.jpg"
+            },
+            {
+                "name": "mccormick",
+                "url": "/assets/img/mccormick.jpg"
+            },
+            {
+                "name": "nbc",
+                "url": "/assets/img/nbc.jpg"
+            },
+            {
+                "name": "stairs",
+                "url": "/assets/img/stairs.jpg"
+            }
+        ]
+    }
+]

@@ -3,17 +3,18 @@
     {% include 'header.njk' %}
     <main>
         <section>
-            <h1>{{ title }}</h1>
+            <h1>{{ title | upper }}</h1>
             {{ content | safe }}
-            <section class="portal-recent">
-                <h2>Recent updates:</h2>
-                <ol>
-                    {%- for post in collections['gallery-post'] -%}
-                        <li>
-                            <a href="{{ post.url }}">{{ post.data.title }}</a>
-                        </li>
-                    {%- endfor -%}
-                </ol>
+            <section class="portal-sections">
+                {%- for section in collections[title] -%}
+                    <figure>
+                        <img src="{{ section.data.thumbnail }}" alt="{{ section.data.alt  }}">
+                        <figcaption>
+                            <h2><a href="{{ section.url }}">{{ section.data.title }}</a></h2>
+                            <p>{{ section.data.description }}</p>
+                        </figcaption>
+                    </figure>
+                {%- endfor -%}
             </section>
         </section>
     </main>

@@ -1,12 +1,10 @@
-{% include 'head.njk' %}
-<body>
-    {% include 'header.njk' %}
-    <main>
-        <section class="content">
-            <h1>{{ title | upper }}</h1>
-            {{ content | safe }}
-        </section>
-    </main>
-    {% include 'footer.njk' %}
+{% include 'header.njk' %}
+<main>
+    <section class="content">
+        <h1>{{ title | upper }}</h1>
+        {{ content | safe }}
+    </section>
+</main>
+{% include 'footer.njk' %}
 </body>
 </html>

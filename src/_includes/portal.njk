@@ -1,23 +1,18 @@
-{% include 'head.njk' %}
-<body>
-    {% include 'header.njk' %}
-    <main>
-        <section>
-            <h1>{{ title | upper }}</h1>
-            {{ content | safe }}
-            <section class="portal-sections">
-                {%- for section in collections[title] -%}
-                    <figure>
-                        <img src="{{ section.data.thumbnail }}" alt="{{ section.data.alt  }}">
-                        <figcaption>
-                            <h2><a href="{{ section.url }}">{{ section.data.title }}</a></h2>
-                            <p>{{ section.data.description }}</p>
-                        </figcaption>
-                    </figure>
-                {%- endfor -%}
-            </section>
+{% include 'header.njk' %}
+<main>
+    <section>
+        <h1>{{ title | upper }}</h1>
+        {{ content | safe }}
+        <hr>
+        <section class="portal-sections">
+            {%- for section in collections[title] -%}
+                <h2><a href="{{ section.url }}">{{ section.data.title | upper }}</a></h2>
+                <p>{{ section.data.description }}</p>
+            {%- endfor -%}
         </section>
-    </main>
-    {% include 'footer.njk' %}
+        <hr>
+    </section>
+</main>
+{% include 'footer.njk' %}
 </body>
 </html>

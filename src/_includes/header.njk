@@ -1,40 +1,6 @@
-{% include 'head.njk' %}
 <header>
     <h2 class="website-title">
         <a href="/">errormine</a>
     </h2>
-    <nav>
-        <!-- Top level pages (portals) -->
-        <ul>
-            {%- for portal in collections.portal -%}
-            <li {% if page.url == portal.url %} aria-current="page" {% endif %}>
-                <a href="{{ portal.url }}">{{ portal.data.title }}</a>
-                {% if page.url.split('/')[1] == portal.data.title %}
-                    <!-- Second level pages (sections) -->
-                    <ul>
-                    {%- for section in collections[portal.data.title] -%}
-                        <li {% if page.url == post.url %} aria-current="page" {% endif %}>
-                            <a href="{{ section.url }}">{{ section.data.title | lower }}</a>
-                            {% if page.url.split('/')[2] == section.data.title %}
-                                <!-- Third level pages (posts) -->
-                                <ul>
-                                {%- for post in collections[section.data.title] -%}
-                                    <li {% if page.url == post.url %} aria-current="page" {% endif %}>
-                                        <a href="{{ post.url }}">{{ post.data.title | lower }}</a>
-                                    </li>
-                                {%- endfor -%}
-                                </ul>
-                            {% endif %}
-                        </li>
-                    {%- endfor -%}
-                    </ul>
-                {% endif %}
-            </li>
-            {%- endfor -%}
-            <li>
-                <a href="/about/">about</a>
-            </li>
-        </ul>
-    </nav>
+    <img class="pixel colorize divider" src="/assets/flower_divider.png" alt="" aria-hidden="true">
 </header>
-<body class="content-grid">

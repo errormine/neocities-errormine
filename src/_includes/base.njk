@@ -1,10 +1,14 @@
-{% include 'header.njk' %}
-<main>
-    <section class="content">
-        <h1>{{ title | upper }}</h1>
-        {{ content | safe }}
-    </section>
-</main>
-{% include 'footer.njk' %}
+{% include 'navigation.njk' %}
+<body class="content-grid">
+    <main>
+        {% include 'header.njk' %}
+        <section class="content">
+            <h1>{{ title | upper }}</h1>
+            {% block content %}
+            {{ content | safe }}
+            {% endblock %}
+        </section>
+        {% include 'footer.njk' %}
+    </main>
 </body>
 </html>

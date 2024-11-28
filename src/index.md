@@ -1,15 +1,8 @@
 ---
-layout: base.njk
+layout: home.njk
 title: HOME
 ---
 
-<figure>
-    <img src="/assets/ermine.png" />
-    <figcaption>The stoat or short-tailed weasel, also known as the ermine.</figcaption>
-</figure>
+This is my corner on <a href="https://neocities.org/site/errormine">Neocities</a>. It is a personal dumping ground for my creative works, thoughts, and anything else I would like to share. Stay a bit, and you might find something interesting. 
 
-Recent changes:
-
- - Something will go here
- - I promise.
- - Blah blah blah
+It is still a work in progress, and I will continue to add more things as I go along.

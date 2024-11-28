@@ -1,0 +1,29 @@
+{% extends "base.njk" %}
+
+{% block content %}
+{{ content | safe }}
+
+<p>
+    <h3>Recent Changes</h3>
+    <ul>
+        <li>Added a new page for my creations.</li>
+        <li>Added a new page for my journal.</li>
+        <li>Added a new page for my about me section.</li>
+    </ul>
+</p>
+<p>
+    <a href="/changes">See more...</a>
+</p>
+
+<p>
+    <h3>Journal Entries</h3>
+    <ul>
+        <li>Journal Entry 1</li>
+        <li>Journal Entry 2</li>
+        <li>Journal Entry 3</li>
+    </ul>
+</p>
+<p>
+    <a href="/journal">Read more...</a>
+</p>
+{% endblock %}

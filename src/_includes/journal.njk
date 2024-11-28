@@ -1,0 +1,28 @@
+{% extends "base.njk" %}
+
+{% block content %}
+{{ content | safe }}
+
+<p>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <p>
+                    {{ post.templateContent | safe }}
+                    <sub>
+                        {{ post.date }} &mdash; {{ post.data.title }}
+                    </sub>
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+</p>
+
+{% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">Previous</a>
+{% endif %}
+
+{% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">Next</a>
+{% endif %}
+{% endblock %}

@@ -5,12 +5,11 @@
 
 <p>
     <ul>
-        {% for post in posts %}
+        {% for gallery in galleries %}
             <li>
                 <p>
-                    {{ post.templateContent | safe }}
                     <sub>
-                        {{ post.date }} &mdash; {{ post.data.title }}
+                        {{ gallery.data.title }}
                     </sub>
                 </p>
             </li>

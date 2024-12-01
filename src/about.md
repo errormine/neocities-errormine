@@ -21,3 +21,8 @@ I am using [11ty](https://www.11ty.dev/) to generate static pages from markdown 
 ## CONTACT
 
 If you would like to contact me, please shout very loudly and hopefully I will be able to hear you. Alternatively, you may send a message on my Neocities <a href="https://neocities.org/site/errormine">profile page</a>. Thank you.
+
+<figure>
+    <q>Beware; for I am fearless, and therefore powerful.</q>
+    <figcaption>— Mary Shelley, <cite>Frankenstein</cite></figcaption>
+</figure>
